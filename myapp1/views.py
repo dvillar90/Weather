@@ -16,5 +16,6 @@ def view_weather(request):
 
     return render(request, "weather.html", context=data)
 
+
 def view_city(request):
-    return render(request, "weather1.html")
+    return HttpResponseRedirect("weather1.html")
