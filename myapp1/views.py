@@ -23,8 +23,8 @@ def city(request):
     try:
         choice = request.GET['City']
         if choice == "New York":
-        c_list = WeatherApp.objects.all()
-        data['weather'] = c_list
+            c_list = WeatherApp.objects.all()
+            data['weather'] = c_list
         return render(request, "weather1.html", context=data)
     except:
         pass
