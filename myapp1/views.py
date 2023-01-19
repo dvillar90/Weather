@@ -18,14 +18,4 @@ def view_weather(request):
 
 def city(request):
     data = dict()
-    w1 = WeatherApp(city="New York", country="USA", weather=10.0)
-    w2 = WeatherApp(city="London", country="England", weather=15.0)
-    try:
-        choice = request.GET['City']
-        if choice == "New York":
-            c_list = WeatherApp.objects.all()
-            data['weather'] = c_list
-        return render(request, "weather1.html", context=data)
-    except:
-        pass
-    return render(request, "weather.html", context=data)
+    return render(request, "weather1.html", context=data)
