@@ -16,6 +16,6 @@ def view_weather(request):
 
     return render(request, "weather.html", context=data)
 
-def city(request):
+def view_city(request):
     data = dict()
     return render(request, "weather1.html", context=data)
