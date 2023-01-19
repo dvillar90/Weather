@@ -18,4 +18,4 @@ def view_weather(request):
 
 
 def view_city(request):
-    return HttpResponseRedirect("weather1.html")
+    return render(request, "weather1.html")
