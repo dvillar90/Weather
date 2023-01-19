@@ -21,5 +21,5 @@ from myapp1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('weather/',views.view_weather, name='weather'),
-    path('weather/',views.city, name='weather1'),
+    path('weather/?City=New+York#',views.city, name='weather1'),
 ]
