@@ -1,7 +1,7 @@
 from django.shortcuts import render
-import requests
 from .models import City
 from .forms import CityForm
+import requests
 def index(request):
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=c6653f6c9abb06e0a3dd17d64a2e8145'
 
